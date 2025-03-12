@@ -16,6 +16,6 @@ if screen -list | grep -q "$SESSION_NAME"; then
 	sleep 2  # Give it some time to close
 fi
 
-screen -dmS "$SESSION_NAME" "$MINER_EXECUTABLE" --algo progpow-quai --opencl-threads auto --opencl-launch auto --url koala.straffesites.be:3333 --send-stale --user seppe --pass x --gpu-temp-limit 90 --log-file "$LOG_FILE"
+screen -dmS "$SESSION_NAME" "$MINER_EXECUTABLE" --algo progpow-quai --opencl-threads auto --opencl-launch auto --url suomi.straffesites.be:3333 --user seppe --pass x --gpu-temp-limit 80 --log-file "$LOG_FILE"
 
 echo "Wildrig started in screen session '$SESSION_NAME'."
