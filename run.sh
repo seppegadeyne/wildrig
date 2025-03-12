@@ -13,4 +13,4 @@ fi
 
 screen -dmS "$SESSION_NAME" "$MINER_EXECUTABLE" --api-port 9090 --api-worker-id tulenisa --watchdog --algo progpow-quai --url suomi.straffesites.be:3333 --user seppe --pass x --gpu-temp-limit 80 
 
-echo "Wildrig started in screen session '$SESSION_NAME'."
+echo "Wildrig started in screen session '$SESSION_NAME' and API at http://localhost:9090."
